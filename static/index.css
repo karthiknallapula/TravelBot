@@ -1,0 +1,204 @@
+/* Cover Page Styles */
+#cover-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #141212; /* Dark background color */
+    color: #ffffff; /* Light text color for readability */
+    transition: opacity 1s ease-in-out;
+}
+
+.cover-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.cover-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    text-align: left;
+}
+
+.cover-logo {
+    width: 300px;
+    height: auto;
+}
+
+.cover-text h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.cover-text p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.cover-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-gif {
+    width: 430px;
+    height: auto;
+    padding-right: 170px;
+}
+
+#start-button {
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px; /* Space between tagline and button */
+}
+
+#start-button:hover {
+    background-color: #444;
+}
+
+/* Main Content Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #ffffff; /* Light text color for readability */
+}
+
+/* Rest of the CSS remains the same */
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the items horizontally */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative; /* Add relative positioning */
+}
+
+header img {
+    height: 40px;
+    position: absolute; /* Absolutely position the image */
+    left: 20px; /* Adjust as needed */
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1600px; /* Make the chat container wider */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2e2e2e; /* Darker background for the chat container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: 60vh;
+}
+
+.setup-inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.setup-input-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.setup-input-container textarea {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #353232;
+    background-color: #333; /* Dark background for input */
+    color: #fff; /* Light text color for readability */
+}
+
+.setup-input-container button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(62, 176, 95);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.user-speech-bubble, .speech-bubble-ai {
+    padding: 10px 20px;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-speech-bubble {
+    align-self: flex-end;
+    background-color: #37c06b;
+    color: #fff;
+}
+
+.speech-bubble-ai {
+    align-self: flex-start;
+    background-color: #444; /* Darker background for AI speech bubble */
+    color: #fff; /* Light text color for readability */
+}
+
+.girl-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ai-message {
+    display: flex;
+    flex-direction: column; /* Change to column to stack items vertically */
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.read-aloud-btn {
+    align-self: flex-start;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #37c06b;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

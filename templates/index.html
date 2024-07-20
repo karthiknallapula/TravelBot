@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <title>Travel Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <!-- Cover Page -->
+    <section id="cover-page">
+        <div class="cover-content">
+            <div class="cover-left">
+                <img src="{{ url_for('static', filename='images/logosymbol2.png') }}" alt="TravelBot Logo" class="cover-logo">
+                <div class="cover-text">
+                    <h1>Infinity Travel</h1>
+                    <p>Your dream trip planner</p>
+                </div>
+                <button id="start-button">Let's get started</button>
+            </div>
+            <div class="cover-right">
+                <img src="{{ url_for('static', filename='images/background-gif.gif') }}" alt="TravelBot GIF" class="cover-gif">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <div id="main-content" style="display: none;">
+        <header>
+            <img src="{{ url_for('static', filename='images/logosymbol2.png') }}" alt="TravelBot">
+            <a href="/"><span>Infinity</span>Travel</a>
+        </header>
+        <main>
+            <!-- Chat Interface -->
+            <section id="setup-container" data-girl-image-url="{{ url_for('static', filename='images/Girl.png') }}">
+                <div id="chat-container">
+                    <div class="setup-inner">
+                        <img src="{{ url_for('static', filename='images/Girl.png') }}" alt="Girl" class="girl-image">
+                        <div class="speech-bubble-ai" id="initial-ai-speech-bubble">
+                            <p id="movie-boss-text">
+                                Hi there! 👋 I'm RoamRanger and I am here to help you plan your dream trip.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Chat bubbles will be appended here -->
+                </div>
+                <div class="setup-input-container" id="setup-input-container">
+                    <textarea id="setup-textarea" placeholder="Eg. I'd love to find a three-day nature retreat in Kerala that offers activities like yoga, hiking, and Ayurvedic treatments."></textarea>
+                    <button class="send-btn" id="send-btn" aria-label="send">SUBMIT</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            &copy; 2023 All rights reserved
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
